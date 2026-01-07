@@ -1,10 +1,11 @@
 import json
 
+data1 = []
 def add():
     while True:
         task = input("Entre the task:")
 
-        data1 = []
+        print(data1)
         data1.append({
             "task":task,
             "Mode" : "Not complete"
@@ -17,6 +18,8 @@ def add():
             continue
         else:
             print("Greetings")
+            break
+
     
 ques = input("Which task you want to perform:")
 if(ques.lower() == "add"):
