@@ -1,11 +1,10 @@
 [
    {
-      "task": "Do Coding",
-      "Mode": "Not complete"
-   }
-][
-   {
-      "task": "do coding",
-      "Mode": "Not complete"
+      "tasks": [
+         {
+            "task": "do coding",
+            "Mode": "Not complete"
+         }
+      ]
    }
 ]
