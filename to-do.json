@@ -1,18 +1,8 @@
 [
-   [
-      {
-         "tasks": [
-            {
-               "task": "do coding",
-               "Mode": "Not complete"
-            }
-         ]
-      }
-   ],
    {
       "tasks": [
          {
-            "task": "dd coding",
+            "task": "Do coding",
             "Mode": "Not complete"
          }
       ]

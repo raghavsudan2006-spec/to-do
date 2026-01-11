@@ -4,7 +4,6 @@ data1 = []
 def add():
     while True:
         task1 = input("Entre the task:")
-        print(data1)
 
         data1.append({
             "tasks":[{
@@ -20,15 +19,22 @@ def add():
                 data = json.load(f)
 
             if(data != []):
-                 for ln in data[0]["tasks"][0]["task"]:
-                    if(task1.lower() == ln.lower()):
+                 for ln in data[0]["tasks"]:
+
+                    line = data[0]["tasks"][0]["task"].split()
+                    res = ' '.join(line)
+                    if(task1.lower() == res.lower()):
                       print("Task already exists")
-                      flag =0
+                      flag = 0
                  if(flag == 0):
-                      continue
+                      que = input("Do you want to add task:")
+                      if(que.lower() == "yes"): continue
+                      else:
+                        print("greetings")
+                        break 
                  else:
                    data1.clear()
-                   data1.append(data)
+                   data1.append(data) 
                    data1.append({
             "tasks":[{
             "task":task1,
