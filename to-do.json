@@ -1,20 +1,24 @@
-[
-   [
+{
+   "todo": [
       {
-         "tasks": [
-            {
-               "task": "Do coding",
-               "Mode": "Not complete"
-            }
-         ]
+         "id": 1,
+         "task": "Go to the Gym",
+         "mode": "Not completed"
+      },
+      {
+         "id": 2,
+         "task": "Do coding",
+         "mode": "Not completed"
+      },
+      {
+         "id": 3,
+         "task": "go to the market",
+         "mode": "Not completed"
+      },
+      {
+         "id": 4,
+         "task": "walk daily",
+         "mode": "Not completed"
       }
-   ],
-   {
-      "tasks": [
-         {
-            "task": "Go to the gym",
-            "Mode": "Not complete"
-         }
-      ]
-   }
-]
+   ]
+}
