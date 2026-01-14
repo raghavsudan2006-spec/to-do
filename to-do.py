@@ -28,7 +28,7 @@ def add():
         new_task = {
             "id":i,
             "task":task1,
-            "mode": "Not completed"
+            "status": "Not completed"
         }
         data["todo"].append(new_task)
 
@@ -49,8 +49,31 @@ def view():
     for ln in data["todo"]:
         print(f"{ln["id"]}. {ln["task"]} -> {ln["mode"]}")
 
+def delete():
+    flag = 0
+    ques = input("Which task you want to perform(delete or change status):")
+    if(ques.lower() == "delete" ):
+        que = input("Entre the task you want to delete:")
+    
+        with open("to-do.json","r")as f:
+            data = json.load(f)
+        for ln in data["todo"]:
+            if(ln["task"] == que.lower()):
+               flag = 1
+               break
+        if(flag == 1):
+            for ln in data["todo"]:
+              if(ln["task"].lower() == que.lower()):
+                ID  = ln["id"]
+                break
+            # for ln in data["todo"][ID:]:
+                
+
+
 ques = input("Which task you want to perform:")
 if(ques.lower() == "add"):
     add()
 elif(ques.lower() == "view"):
     view()
+elif(ques.lower() == "change"):
+    delete()
