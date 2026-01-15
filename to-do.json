@@ -6,11 +6,6 @@
          "status": "Not completed"
       },
       {
-         "id": 2,
-         "task": "Do coding",
-         "status": "Not completed"
-      },
-      {
          "id": 3,
          "task": "go to the market",
          "status": "Not completed"
